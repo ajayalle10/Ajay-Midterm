@@ -1,0 +1,359 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.9fr 0.1fr 1fr 0.1fr 0.6fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "abtimg abtimg abt abt abt abt"
+    "phead phead phead phead phead phead "
+    "p1 p1 p2 p2 p3 p3"
+    "imghead imghead imghead imghead imghead imghead"
+    "img1 img2 img3 img4 img5 img6"
+    "hobbyhead hobbyhead hobbyhead hobbyhead hobbyhead hobbyhead"
+    "hobby1 hobby1 hobby2 hobby2 hobby3 hobby3"
+    "blogshead blogshead blogshead blogshead blogshead blogshead"
+    "blog1 blog1 blog2 blog2 blog3 blog3"
+    "footer footer footer footer footer footer";
+}
+
+nav {
+  margin-top: 1.5rem;
+  grid-area: nav;
+  margin-bottom: 2rem;
+  text-align: center;
+  a {
+    margin-left: 30px;
+    overflow: hidden;
+    background-color: rgb(248, 189, 197);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 0.7rem;
+  }
+  a:hover {
+    background-color: rgb(248, 223, 226);
+    color: black;
+  }
+}
+
+.abtimage {
+  grid-area: abtimg;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  img {
+    margin-top: 1.6rem;
+    width: 20rem;
+    border-radius: 1rem;
+  }
+  img:hover {
+    transform: rotate(180deg) scale(1.1);
+  }
+  margin-right: 2rem;
+  background-color: #e0e0e0;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 12px #00000014;
+}
+
+.about {
+  grid-area: abt;
+  margin: 1rem 1rem 0rem 0.5rem;
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  background-color: #ffefd5;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 12px #00000014;
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+#paperhead {
+  grid-area: phead;
+  text-align: center;
+}
+
+.paper {
+  text-align: center;
+  img {
+    width: 20rem;
+    height: 13rem;
+    border-radius: 1rem;
+  }
+  p {
+    text-align: justify;
+    float: inline-start;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+  }
+}
+
+#p1 {
+  grid-area: p1;
+  background-color: #d4e7d0;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 12px #00000014;
+}
+#p2 {
+  grid-area: p2;
+  background-color: #d4e7d0;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 12px #00000014;
+}
+#p3 {
+  grid-area: p3;
+  background-color: #d4e7d0;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 12px #00000014;
+}
+
+#imghead {
+  grid-area: imghead;
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+  img {
+    width: 13rem;
+    height: 19rem;
+    margin: 3rem 0rem;
+    border-radius: 1rem;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+
+#img1 {
+  grid-area: img1;
+  background-image: linear-gradient(
+    to right,
+    rgb(225, 193, 193),
+    rgb(225, 225, 187)
+  );
+  margin: 0rem 0.3rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 12px #00000014;
+}
+#img2 {
+  grid-area: img2;
+  background-image: linear-gradient(
+    to right,
+    rgb(225, 193, 193),
+    rgb(219, 219, 185)
+  );
+  margin: 0rem 0.3rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 12px #00000014;
+}
+#img3 {
+  grid-area: img3;
+  background-image: linear-gradient(
+    to right,
+    rgb(225, 193, 193),
+    rgb(219, 219, 185)
+  );
+  margin: 0rem 0.3rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 12px #00000014;
+}
+#img4 {
+  grid-area: img4;
+  background-image: linear-gradient(
+    to right,
+    rgb(225, 193, 193),
+    rgb(219, 219, 185)
+  );
+  margin: 0rem 0.3rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 12px #00000014;
+}
+#img5 {
+  grid-area: img5;
+  background-image: linear-gradient(
+    to right,
+    rgb(225, 193, 193),
+    rgb(219, 219, 185)
+  );
+  margin: 0rem 0.3rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 12px #00000014;
+}
+#img6 {
+  grid-area: img6;
+  background-image: linear-gradient(
+    to right,
+    rgb(225, 193, 193),
+    rgb(219, 219, 185)
+  );
+  margin: 0rem 0.3rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 12px #00000014;
+}
+
+#hobbieshead {
+  grid-area: hobbyhead;
+  text-align: center;
+}
+
+.hobby {
+  text-align: center;
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  img {
+    width: 20rem;
+    height: 13rem;
+    border-radius: 1rem;
+  }
+  p {
+    font-size: 1.3rem;
+    text-align: justify;
+    float: inline-start;
+  }
+}
+
+#hobby1 {
+  grid-area: hobby1;
+  background-color: #ffe5d9;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 12px #00000014;
+}
+#hobby2 {
+  grid-area: hobby2;
+  background-color: #ffe5d9;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 12px #00000014;
+}
+#hobby3 {
+  grid-area: hobby3;
+  background-color: #ffe5d9;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 12px #00000014;
+}
+
+#blogshead {
+  grid-area: blogshead;
+  text-align: center;
+}
+
+.blog {
+  text-align: center;
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  img {
+    width: 20rem;
+    height: 13rem;
+    border-radius: 1rem;
+  }
+  p {
+    font-size: 1.3rem;
+    text-align: justify;
+    float: inline-start;
+  }
+}
+
+#blog1 {
+  grid-area: blog1;
+  background-color: #dae5fa;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 12px #00000014;
+}
+#blog2 {
+  grid-area: blog2;
+  background-color: #dae5fa;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 12px #00000014;
+}
+#blog3 {
+  grid-area: blog3;
+  background-color: #dae5fa;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 12px #00000014;
+}
+
+footer {
+  grid-area: footer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  a {
+    text-decoration: none;
+  }
+  img {
+    width: 3rem;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: 0.2fr 0.6fr 1.2fr 0.1fr 0.9fr 0.9fr 0.9fr 0.1fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.1fr 0.9fr 0.9fr 0.9fr 0.1fr 0.9fr 0.9fr 0.8fr 0.1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "abtimg"
+      "abt"
+      "phead"
+      "p1"
+      "p2"
+      "p3"
+      "imghead"
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6"
+      "hobbyhead"
+      "hobby1"
+      "hobby2"
+      "hobby3"
+      "blogshead"
+      "blog1"
+      "blog2"
+      "blog3"
+      "footer";
+  }
+  .abtimage,
+  #p1,
+  #p2,
+  #img1,
+  #img2,
+  #img3,
+  #img4,
+  #img5,
+  #hobby1,
+  #hobby2,
+  #blog1,
+  #blog2 {
+    margin-bottom: 2rem;
+  }
+  footer {
+    margin-top: 1.5rem;
+  }
+  .abtimage {
+    margin-right: 1rem;
+    height: 32rem;
+  }
+  .about {
+    margin-left: 1rem;
+  }
+  nav {
+    a {
+      margin-top: 0.7rem;
+      display: inline-block;
+    }
+  }
+  .logos {
+    margin-right: 1.5rem;
+  }
+}
